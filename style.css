@@ -15,7 +15,7 @@ body{
   grid-column-gap: 0px;
   grid-row-gap: 0px;
   
-  background: black;
+  background: rgb(232, 228, 214);
   align-items: first baseline;
   justify-content: center; 
   overflow: hidden;   
@@ -29,8 +29,7 @@ body{
   display: flex;
   align-items: center;
   justify-content: center;
-
-  background: black;  
+   
   gap: 20px;
 }
 
@@ -38,7 +37,7 @@ body{
   height: fit-content;
   width: fit-content;
   border: 0;  
-  color: grey;
+  color: rgb(154, 154, 154);
   background: none;
   font-size:400%;
   font-family: CODE_light;  
@@ -46,14 +45,13 @@ body{
   transition-duration: 200ms;
 }
 .menuBtns:hover{
-  color: white;
-  text-shadow: 0 0 5px white;
+  color: rgb(0, 0, 0);  
 }
 .menuBtns:hover + *{
-  color:rgb(180, 180, 180);
+  color:rgb(125, 125, 125);
 }
 .menuBtns:has(+ *:hover){
-  color:rgb(180, 180, 180);
+  color:rgb(125, 125, 125);
 }
 
 #content{
@@ -61,28 +59,35 @@ body{
   height: 100%;
   grid-area: 3 / 1;  
   
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  box-sizing: border-box;
-  background: black;    
-  border-top: dotted 0px red;
-  border-bottom: dotted 0px red;  
+  display: grid;
+  grid-template-columns: 0.2fr 1fr 0.2fr;
+  grid-template-rows: 1fr;  
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;      
 }
+
 #imageContainer{    
-  width: max-content;
-  height: max-content;
+  width: 100%;
+  height: 100em;
+  grid-area: 1 / 2;
 
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;     
+  overflow:scroll;  
+  
   gap: 30px;  
+  border: dotted red 2px;
+}
+.row{
+  display: flex;
+  gap: 30px;
 }
 .images:not(.images:hover){
-  opacity: 0%;
+  opacity: 5%;
 }
-#imageContainer:not(#imageContainer:hover) .images{
+.row:not(.row:hover) .images{
   opacity: 100% !important;
 }
 .images{
