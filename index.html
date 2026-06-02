@@ -36,7 +36,9 @@
         <div id="projectsAnchor" class="anchor"></div> 
         <div id="projectsBody">
           <div id="projectsGrid">
-            <div id="videosGrid">
+            <div id="leftArrowContainer" class="arrowContainer" onclick="prev()">
+            </div>
+            <div id="videosGrid1" class="videosGrid">
               <div id="vid1Container" class="vidContainer">                
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/cTljGhrfz6Q?si=x9F9nB9jT26RwwtM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
               </div>
@@ -56,6 +58,23 @@
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/FBZtY4nvkZ8?si=gAMN89hwmC2FtZjm" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
               </div>
             </div>
+            <div id="videosGrid2" class="videosGrid" style="display:none">
+              <div id="vid1Container" class="vidContainer">                
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/cTljGhrfz6Q?si=x9F9nB9jT26RwwtM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              </div>
+              <div id="vid2Container" class="vidContainer">
+              </div>
+              <div id="vid3Container" class="vidContainer">
+              </div>
+              <div id="vid4Container" class="vidContainer">
+              </div>
+              <div id="vid5Container" class="vidContainer">
+              </div>
+              <div id="vid6Container" class="vidContainer">
+              </div>
+            </div>
+            <div id="rightArrowContainer" class="arrowContainer" onclick="next()">
+            </div>
           </div>
         </div>        
       </div>
@@ -66,6 +85,7 @@
       <div id="contactsPage" class="pageBlock">
         <div id="contactsAnchor" class="anchor"></div> 
         <div id="contactsBody">dont contact me</div>
-      </div>            
+      </div>
+      <script src="script.js"></script>  
       </body>
 </html>
