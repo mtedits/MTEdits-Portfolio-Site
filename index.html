@@ -7,32 +7,65 @@
       <link href="/style.css" rel="stylesheet" type="text/css" media="all">
     </head>
     <body>
-      <nav id="navbar">
-        <button class="menuBtns">home</button>
-        <button class="menuBtns">edits</button>
-        <button class="menuBtns">graphic</button>
-      </nav>
-      <div id="content">
-        <div id="imageContainer">
-          <div class="row">
-            <img class="images" src="/images/WIP 12.png" draggable="false" />
-          <img class="images" src="/images/WIP 12.png" draggable="false" />
-          <img class="images" src="/images/WIP 12.png" draggable="false" />
-          <img class="images" src="/images/WIP 12.png" draggable="false" /> 
-          </div>
-          <div class="row">
-            <img class="images" src="/images/WIP 12.png" draggable="false" />
-            <img class="images" src="/images/WIP 12.png" draggable="false" />
-            <img class="images" src="/images/WIP 12.png" draggable="false" />
-            <img class="images" src="/images/WIP 12.png" draggable="false" />
-          </div>
-          <div class="row">
-            <img class="images" src="/images/WIP 12.png" draggable="false" />
-            <img class="images" src="/images/WIP 12.png" draggable="false" />
-            <img class="images" src="/images/WIP 12.png" draggable="false" />
-            <img class="images" src="/images/WIP 12.png" draggable="false" />
-          </div>
-        </div>  
+      <div id="imageContainer">        
+        <img id="logo" src="assets/mt edits logo svg website.svg">
+        
       </div>
-    </body>
+      <div id="imageContainer">
+        <div id="logoBar">          
+        </div>              
+      </div>  
+      <nav id="navbar">
+        <a id="homeBtn" class="menuBtns" href="#homePage">
+          <img src="/assets/home.png" width="48px" height="48px">
+        </a>       
+        <a id="projectsBtn" class="menuBtns" href="#projectsAnchor">
+          <img src="/assets/projects.png" width="48px" height="48px">
+        </a>
+        <a id="aboutBtn" class="menuBtns" href="#aboutAnchor">
+          <img src="/assets/about.png" width="48px" height="48px">
+        </a>
+        <a id="contactsBtn" class="menuBtns" href="#contactsAnchor">
+          <img src="/assets/contacts.png" width="48px" height="48px">
+        </a>
+      </nav>                  
+      <div id="homePage" class="pageBlock">        
+        <div id="homeBody">its me yo</div>                
+      </div>      
+      <div id="projectsPage" class="pageBlock">
+        <div id="projectsAnchor" class="anchor"></div> 
+        <div id="projectsBody">
+          <div id="projectsGrid">
+            <div id="videosGrid">
+              <div id="vid1Container" class="vidContainer">                
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/cTljGhrfz6Q?si=x9F9nB9jT26RwwtM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              </div>
+              <div id="vid2Container" class="vidContainer">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/KulmROgmohg?si=z7JPNSv91KI6Xw2c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              </div>
+              <div id="vid3Container" class="vidContainer">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/EzFloIl_3JU?si=YUCkFD938-LG8K37" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              </div>
+              <div id="vid4Container" class="vidContainer">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/QqM1FAJkIiE?si=1w9rdQaIZ4bRw4TL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              </div>
+              <div id="vid5Container" class="vidContainer">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/O0Xz--wUYsc?si=jjidNMQVLV80ndv3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              </div>
+              <div id="vid6Container" class="vidContainer">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/FBZtY4nvkZ8?si=gAMN89hwmC2FtZjm" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              </div>
+            </div>
+          </div>
+        </div>        
+      </div>
+      <div id="aboutPage" class="pageBlock">
+        <div id="aboutAnchor" class="anchor"></div> 
+        <div id="aboutBody">automatic never static</div>
+      </div> 
+      <div id="contactsPage" class="pageBlock">
+        <div id="contactsAnchor" class="anchor"></div> 
+        <div id="contactsBody">dont contact me</div>
+      </div>            
+      </body>
 </html>

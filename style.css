@@ -3,46 +3,49 @@
   src: url(fonts/CODE\ Light.otf);
 }
 
-body{ 
-  width: 100%;
-  height: 100%;
-  margin: 0;
-  position: absolute;  
-
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 0.05fr 0.1fr 1fr 0.15fr;  
-  grid-column-gap: 0px;
-  grid-row-gap: 0px;
-  
-  background: rgb(232, 228, 214);
-  align-items: first baseline;
-  justify-content: center; 
-  overflow: hidden;   
+html {
+  scroll-behavior: smooth;
 }
 
-#navbar{  
-  width: 100%;
-  height: 100%;
-  grid-area: 2 / 1;
+* {
+margin: 0;
+padding: 0;
+}
 
-  display: flex;
+
+#navbar{  
+  width: 5vw;
+  height: 40%;
+  position:fixed;
+
+  display:flex;
+  flex-direction:column;
+  top: 30vh;
+
+  align-self: center;
   align-items: center;
-  justify-content: center;
-   
-  gap: 20px;
+  justify-content: center;   
+  gap: 0px;  
+  z-index: 199;
+}
+
+#homeBtn{
+  grid-area: 1 / 1;  
+}
+#editsBtn{
+  grid-area: 2 / 1;
+}
+#graphicsBtn{
+  grid-area: 3 / 1;
 }
 
 .menuBtns{
-  height: fit-content;
-  width: fit-content;
-  border: 0;  
   color: rgb(154, 154, 154);
   background: none;
-  font-size:400%;
-  font-family: CODE_light;  
+  font-size: 400%;
   
-  transition-duration: 200ms;
+  transition-duration: 200ms;  
+  z-index: 200;  
 }
 .menuBtns:hover{
   color: rgb(0, 0, 0);  
@@ -54,63 +57,116 @@ body{
   color:rgb(125, 125, 125);
 }
 
-#content{
-  width: 100%;
-  height: 100%;
-  grid-area: 3 / 1;  
-  
-  display: grid;
-  grid-template-columns: 0.2fr 1fr 0.2fr;
-  grid-template-rows: 1fr;  
-  grid-column-gap: 0px;
-  grid-row-gap: 0px;      
+.pageBlock {
+  width: 100vw;
+  min-height: 84.9vh;
+  display: flex;
+  scroll-snap-align: start;
+  color: #222;
+  position: relative;
 }
 
-#imageContainer{    
-  width: 100%;
-  height: 100em;
-  grid-area: 1 / 2;
-
+#homeBody{   
+  min-height: 100vh;
+  width: 100vw;
+  margin: 0 auto;
+  background: rgb(36, 38, 42);
   display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;  
+}
+#projectsBody{
+  top: 0;
+  width: 100vw;  
+  top: 100%;
+  background: rgb(255, 242, 201); 
+}
+#projectsGrid{
+  top: 0;
+  display:grid;
+  width:95vw;
+  height:100%;
+  grid-template-columns: 1fr 12fr 1fr;
+  grid-template-rows: 1fr;
+  z-index: 5;
+  margin-left: 5vw;
+  margin-top: 0;
+  
+}
+#videosGrid{
+  top: 0;
+  grid-area: 1 / 2;
+  width: 100%;
+  height: 100%;  
+  z-index:5;
+  margin: 0;  
+
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+.vidContainer{
+  width:100%;
+  height:100%;  
   align-items: center;
   justify-content: center;
-  flex-direction: column;     
-  overflow:scroll;  
+  display:flex;
+}
+.vidContainer img{
+  width:95%;    
+}
+.vidContainer iframe{
+  width:90%;
+  height: 80%;
+}
+
+#aboutBody{
+  width: 100vw;  
+  margin: 0 auto;
+  background: rgb(36, 38, 42);
+  text-align: center;
+  align-content: center;
+  color: rgb(255, 242, 201)
+}
+#contactsBody{
+  width: 100vw;
   
-  gap: 30px;  
-  border: dotted red 2px;
+  margin: 0 auto;
+  background: rgb(255, 242, 201);
+  text-align: center;
+  align-content: center;
 }
-.row{
+#imageContainer{
+  width: 100vw;
+  height: 300vh;
   display: flex;
-  gap: 30px;
+  align-items: start;
+  justify-content: center;
+  position: absolute;  
+  margin-top: 38.5vh;
 }
-.images:not(.images:hover){
-  opacity: 5%;
+
+#logoBar{
+  width: 100%;
+  height: 15.1vh;
+  top:0vh;
+  background: rgb(36, 38, 42);
+  position: sticky;
+  z-index:99;
 }
-.row:not(.row:hover) .images{
-  opacity: 100% !important;
+
+#logo {
+  height:23vh;  
+  top:-4vh;
+  position: sticky;
+  z-index: 100; 
+  pointer-events: none; 
 }
-.images{
-  width: 400px;
-  height: 400px;
-  object-fit: cover;  
-  transition-duration: 200ms;
+
+.anchor{
+  position:absolute;     
+  top: -15.1vh;
 }
-.images:hover{
-  width: 500px;  
-  opacity: 100% !important;  
-}
-.images:hover + *{
-  width: 350px;
-  opacity: 50% !important;
-}
-.images:has(+ *:hover){
-  width:350px;
-  opacity: 50% !important;
-}
-.images:hover + * + *{  
-  opacity: 25% !important;
-}
-.images:has(+ * + *:hover){  
-  opacity: 25% !important;
-}
+
