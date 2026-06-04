@@ -16,20 +16,20 @@
         </div>              
       </div>  
       <nav id="navbar">
-        <a id="homeBtn" class="menuBtns" href="#homePage">
-          <img src="/assets/home.png" width="48px" height="48px">
+        <a id="homeBtn" class="menuBtns" href="#homePage" draggable="false">
+          <img src="/assets/home.png" width="48px" height="48px" draggable="false">
           <h3>Home</h3>
         </a>       
-        <a id="projectsBtn" class="menuBtns" href="#projectsAnchor">
-          <img src="/assets/projects.png" width="48px" height="48px">
+        <a id="projectsBtn" class="menuBtns" href="#projectsAnchor" draggable="false">
+          <img src="/assets/projects.png" width="48px" height="48px" draggable="false">
           <h3>Projects</h3>
         </a>
-        <a id="aboutBtn" class="menuBtns" href="#aboutAnchor">
-          <img src="/assets/about.png" width="48px" height="48px">
+        <a id="aboutBtn" class="menuBtns" href="#aboutAnchor" draggable="false">
+          <img src="/assets/about.png" width="48px" height="48px" draggable="false">
           <h3>About</h3>
         </a>
-        <a id="contactsBtn" class="menuBtns" href="#contactsAnchor">
-          <img src="/assets/contacts.png" width="48px" height="48px">
+        <a id="contactsBtn" class="menuBtns" href="#contactsAnchor" draggable="false">
+          <img src="/assets/contacts.png" width="48px" height="48px" draggable="false">
           <h3>Contacts</h3>
         </a>
       </nav>                  
@@ -42,7 +42,7 @@
           <h1>PROJECTS</h1>
           <div id="projectsGrid">
             <div id="leftArrowContainer" class="arrowContainer" onclick="prev()">
-              <img src="assets/arrow.png">
+              <img src="assets/arrow.png" draggable="false">
             </div>
             <div id="videosGrid1" class="videosGrid">
               <div id="vid1Container" class="vidContainer">                
@@ -80,7 +80,7 @@
               </div>
             </div>
             <div id="rightArrowContainer" class="arrowContainer" onclick="next()">
-              <img src="assets/arrow.png">
+              <img src="assets/arrow.png" draggable="false">
             </div>
           </div>
         </div>        
@@ -90,13 +90,45 @@
         <div id="aboutBody">
           <h1>ABOUT ME</h1>
           <div id="aboutMeSection">
-            <p>Yo it's the real og</p>
+            <p>
+              Hello, welcome to my portfolio! So a little about me <i>(P.S. this isn't going to be very "little" so TLDR is at the bottom)</i>, I first started editing the same way many did, in Windows Movie Maker. I would've been about 10 years old or so as this was around 2014 making Minecraft videos with friends and having fun with all the power point level "transitions" that were a standout feature.
+	            I soon discovered Sony Vegas Pro 13 in 2015 where my interest in this small hobby grew exponentially. Now the Minecraft videos had a bit more "flare" with all the tools 11 year old me could dream of. This was mostly where my editing spree ended as I took more interest in playing games rather than editing videos of them. 
+            </p>
+            <p>
+	            A couple years later however, I found a niche on Youtube of "game montages" or edits rather. 
+              Super over edited clips complimented with loud bass boosted music with a focus on visual effects. 
+              I quickly learnt most were making these using Adobe After Effects and sure enough, I was hooked. 
+              I started making my own "edits" and binging tutorials like there was no tomorrow. 
+              Constantly editing whatever games I was playing at the time, be it CS:GO, Brawlhalla or Rocket League. 
+              I finally found something that <i>almost</i> rivalled my obsession with games. 
+              But of course, I started trying to do too much, and whilst I did improve a lot, I started pushing the limits of what was technically possible inside of a measly CS6 version of After Effects as well as my teenage brain and so, that was the unfortunate end to my marathon of editing...<i>(I did say almost, those damn games!)</i>
+            </p>
+            <strong>
+	            "When one door closes, another one opens; but we often look so long and so regretfully upon the closed door that we do not see the ones which open for us." - Alexander Graham
+            </strong>
+            <p>
+	            So fastforward to 2020, I know, not a year most of us want to remember, I start college <i>(albeit mostly online)</i> and take on a Media Production course. It's all about learning how to operate cameras, lighting equipment, sets, planning, all things that you learn <i>very effectively</i> through a webcam and a small chatbox. But there was one thing that I could actually learn, editing <i>(wait a minute I see where this is going)</i>. So I made a prompt dive, ahead of the rest of my class, into Adobe Premiere Pro. I was mainly making Fitz/Sovietwomble inspired videos of me and my friends goofing around in popular games making jokes that would ABSOLUTELY not be approved of in this day and age. Regardless, it taught me a lot about editing not for a montage, but rather a story to an extent, comedic timing, humour and just how Youtube works in general. I got far ahead of my peers and easily favoured editing over anything physical in the course. And by the end of it, I was left with a Media Production Diploma, no intention of going to University, and feeling lost. 
+	            For the following years I explored many different computer-related interests such 3D modelling, photo editing, music producing, game and web development. But none stuck with me like video editing did. And such in late 2025, I started professionaly video editing as a freelancer. 
+            </p>
+            <b>
+              TLDR: I did many years of editing, got a Media Production Diploma in City of Oxford College, then did some more editing :P
+            </b>
           </div>
         </div>
       </div> 
       <div id="contactsPage" class="pageBlock">
         <div id="contactsAnchor" class="anchor"></div> 
-        <div id="contactsBody">dont contact me</div>
+        <div id="contactsBody">
+          <h1>CONTACT ME</h1>
+          <div id="contactMeSection">            
+            <a id="discordButton" class="contactButton" draggable="false">
+              Discord
+            </a>
+            <a id="emailButton" class="contactButton" href="mailto:mt.edits.000@gmail.com" draggable="false">
+              Email
+            </a>
+          </div>
+        </div>
       </div>
       <script src="script.js"></script>  
       </body>
