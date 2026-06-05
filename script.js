@@ -1,20 +1,37 @@
-const page1 = document.getElementById("videosGrid1")
-const page2 = document.getElementById("videosGrid2")
+const leftArrow = document.getElementById("leftArrowContainer")
+const rightArrow = document.getElementById("rightArrowContainer")
 
-var page=1;
+var page = 1;
 
-function prev() {  
-  if (page == 2){
-    page1.style.display = "grid";
-    page2.style.display = "none";    
-    page = 1
-  }  
-}
+var lastPage = 3; // change this when adding pages to total number of pages :)
 
 function next() {    
-  if (page == 1){
-    page1.style.display = "none";
-    page2.style.display = "grid";    
-    page = 2
-  }   
+  if (page < lastPage){
+    document.getElementById("videosGrid" + page).style.display = "none";
+    page++;
+    document.getElementById("videosGrid" + page).style.display = "flex";    
+    checkPage();
+  }
+}
+function prev() {  
+  if (page > 1){
+    document.getElementById("videosGrid" + page).style.display = "none";        
+    page--;
+    document.getElementById("videosGrid" + page).style.display = "flex"; 
+    checkPage();  
+  }  
+}
+function checkPage() {  
+  if (page > 1){
+    leftArrow.style.visibility = "visible";
+  } 
+  else {
+    leftArrow.style.visibility = "hidden";
+  }
+  if (page < lastPage) {
+    rightArrow.style.visibility = "visible";
+  }
+  else {
+    rightArrow.style.visibility = "hidden";
+  }
 }
