@@ -3,21 +3,21 @@ const rightArrow = document.getElementById("rightArrowContainer")
 
 var page = 1;
 
-var lastPage = 3; // change this when adding pages to total number of pages :)
+var lastPage = 4; // change this when adding pages to total number of pages :)
 
 function next() {    
   if (page < lastPage){
-    document.getElementById("videosGrid" + page).style.display = "none";
+    document.getElementById("videosGridContainer" + page).style.display = "none";
     page++;
-    document.getElementById("videosGrid" + page).style.display = "flex";    
+    document.getElementById("videosGridContainer" + page).style.display = "flex";    
     checkPage();
   }
 }
 function prev() {  
   if (page > 1){
-    document.getElementById("videosGrid" + page).style.display = "none";        
+    document.getElementById("videosGridContainer" + page).style.display = "none";        
     page--;
-    document.getElementById("videosGrid" + page).style.display = "flex"; 
+    document.getElementById("videosGridContainer" + page).style.display = "flex"; 
     checkPage();  
   }  
 }
